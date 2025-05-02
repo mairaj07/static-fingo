@@ -81,10 +81,22 @@
 	<!-- Mobile Menu Start -->
 	<div class="menu__bar-popup">
 		<div class="menu__bar-popup-top">
-			<div class="logo"><a href="index-2.html"><img src="assets/img/logo-2.png" alt="logo-image"></a></div>			
-			<div class="close"><i class="fal fa-times"></i></div>
-
+			<div class="logo">
+				<a href="index.html">
+					<img src="assets/img/logo-2.png" alt="logo-image">
+				</a>
+			</div>
+			<div class="close">
+				<i class="fal fa-times"></i>
+			</div>
 		</div>
+		<div class="vertical-menu">
+			<div class="vertical_menu">
+				<!-- Menu items will be loaded here by JavaScript (same as desktop nav) -->
+			</div>
+		</div>
+	</div>
+	<div class="menu__bar-popup-overlay"></div>	
 		<div class="vertical-menu">
 			<div class="vertical_menu">
 				<!-- Here Menu Will Come Automatically Via Javascript / Same Menu as in Header -->
@@ -120,93 +132,59 @@
 	</div>
 	<!-- TopBar Area End -->
 	<!-- Header Area Start -->
-	<div class="header__area">
-		<div class="container">
-			<div class="row">
-				<div class="col-xl-12">
-					<div class="header__area-menubar">
-						<div class="header__area-menubar-left one">
-							<div class="header__area-menubar-left-logo">
-								<a href="index-2.html"><img class="dark-n" src="assets/img/logo-1.png" alt="logo"><img class="light-n" src="assets/img/logo-2.png" alt="logo"></a>
+<div class="header__area">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-12">
+				<div class="header__area-menubar">
+					<div class="header__area-menubar-left one">
+						<div class="header__area-menubar-left-logo">
+							<a href="index.html">
+								<img class="dark-n" src="assets/img/logo-1.png" alt="logo">
+								<img class="light-n" src="assets/img/logo-2.png" alt="logo">
+							</a>
+						</div>
+					</div>
+					<div class="header__area-menubar-center">
+						<div class="header__area-menubar-center-menu">
+							<ul id="mobilemenu">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">About Us</a></li>
+								<li class="menu-item-has-children">
+									<a href="services.html">Service</a>
+									<ul class="sub-menu">
+										<li><a href="services-details.html">Services Details</a></li>
+									</ul>
+								</li>
+								<li><a href="contact.html">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="header__area-menubar-right">
+						<div class="header__area-menubar-right-search xl-display-n">
+							<div class="search">
+								<span class="header__area-menubar-right-search-icon open"><i class="flaticon-search-1"></i></span>
 							</div>
 						</div>
-						<div class="header__area-menubar-center">
-							<div class="header__area-menubar-center-menu">
-								<ul id="mobilemenu">
-									<li class="menu-item-has-children"><a href="#">Home</a>
-										<!-- <ul class="sub-menu">
-											<li><a href="index-2.html">Home 01</a></li>
-											<li><a href="index-two.html">Home 02</a></li>
-											<li><a href="index-three.html">Home 03</a></li>
-										</ul>
-									</li> -->
-									<li class="menu-item-has-children"><a href="about.html">AboutUs</a>
-										<ul class="sub-menu">
-											<!-- <li><a href="about.html">About Us</a></li>
-											<li><a href="history.html">Company History</a></li> -->
-											<!-- <li class="menu-item-has-children"><a href="#">Services</a>
-												<ul class="sub-menu">
-													<li><a href="services.html">Service 01</a></li>
-													<li><a href="services-details.html">Services Details</a></li>
-												</ul>
-											</li> -->
-											<!-- <li><a href="testimonial.html">Testimonials</a></li>
-											<li><a href="pricing.html">Price Plans</a></li>
-											<li><a href="faq.html">FAQ's</a></li>
-											<li><a href="team.html">Team</a></li>
-											<li><a href="request-quote.html">Request Quote</a></li>
-											<li><a href="404-error.html">404 Page</a></li> -->
-										</ul>
-									</li>
-									<li class="menu-item-has-children"><a href="services.html">Service</a>
-										<ul class="sub-menu">
-											<li><a href="services-details.html">Services Details</a></li>
-											<!-- <li class="menu-item-has-children"><a href="#">Portfolio Grid</a>
-												<ul class="sub-menu">
-													<li><a href="portfolio-two.html">2 Columns</a></li>
-													<li><a href="portfolio-three.html">3 Columns</a></li>
-													<li><a href="portfolio-four.html">4 Columns</a></li>
-												</ul>
-											</li> -->
-											<!-- <li><a href="portfolio-details.html">Portfolio Details</a></li> -->
-										</ul>
-									</li>
-									<!-- <li class="menu-item-has-children"><a href="#">Blog</a>
-										<ul class="sub-menu">
-											<li><a href="blog.html">Blog Grid</a></li>
-											<li><a href="blog-standard.html">Blog Standard</a></li>
-											<li><a href="blog-details.html">Blog Details</a></li>
-										</ul> -->
-									</li>
-									<li><a href="contact.html">Contact Us</a></li>
-								</ul>
+						<div class="header__area-menubar-right-tel lg-display-n">
+							<div class="header__area-menubar-right-tel-icon">
+								<i class="flaticon-phone-call"></i>
+							</div>
+							<div class="header__area-menubar-right-tel-info">
+								<span>Call Us Now</span>
+								<h6><a href="tel:(415)755-7890">(415) 755-7890</a></h6>
 							</div>
 						</div>
-						<div class="header__area-menubar-right">
-							<div class="header__area-menubar-right-search xl-display-n">
-								<div class="search">	
-									<span class="header__area-menubar-right-search-icon open"><i class="flaticon-search-1"></i></span>
-								</div>
-							</div>
-							<div class="header__area-menubar-right-tel lg-display-n">
-								<div class="header__area-menubar-right-tel-icon">
-									<i class="flaticon-phone-call"></i>
-								</div>
-								<div class="header__area-menubar-right-tel-info">
-									<span>Call Us Now</span>
-									<h6><a href="tel:(415)755-7890">(415) 755-7890</a></h6>
-								</div>
-							</div>
-							<div class="header__area-menubar-right-responsive-menu menu__bar">
-								<i class="flaticon-menu-3"></i>
-							</div>
+						<div class="header__area-menubar-right-responsive-menu menu__bar">
+							<i class="flaticon-menu-3"></i>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- Header Area End -->
+</div>
+<!-- Header Area End -->
     <!-- Breadcrumb Area Start -->
     <div class="breadcrumb__area" style="background-image: url('assets/img/pages/breadcrumb.jpg');">
 		<div class="container">
@@ -215,7 +193,7 @@
 					<div class="breadcrumb__area-content">
 						<h2>About Us</h2>
 						<ul>
-							<li><a href="index-2.html">Home</a><i>/</i></li>
+							<!-- <li><a href="index-2.html">Home</a><i>/</i></li> -->
 							<li>About Us</li>
 						</ul>
 					</div>
@@ -476,9 +454,7 @@
 					<div class="copyright__area">
 						<div class="row al-center">
 							<div class="col-md-7">
-								<div class="copyright__area-content md-t-center md-mb-10">
-									<p>Copyright 2025 – All Rights Reserved By <a href="https://themeforest.net/user/themeori/portfolio" target="_blank">ThemeOri</a></p>
-								</div>
+								
 							</div>
 							<div class="col-md-5">
 								<div class="footer-widget-menu">
